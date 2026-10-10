@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TREK - تأجير الدراجات الهوائية والكهربائية وبيع قطع الغيار في طرطوس. أسعار مناسبة، جودة عالية، خدمة سريعة." />
+    <meta name="theme-color" content="#0d2b28" />
+    <title>TREK | تأجير الدراجات وقطع الغيار في طرطوس</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== Header / Navbar ===== -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#hero" class="logo" aria-label="TREK الصفحة الرئيسية">
+                <img src="image/logo.png" alt="شعار TREK لتأجير الدراجات" width="60" height="60" />
+            </a>
+
+            <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link active">الرئيسية</a></li>
+                    <li><a href="#bikes" class="nav__link">الدراجات</a></li>
+                    <li><a href="#parts" class="nav__link">قطع الغيار</a></li>
+                    <li><a href="#trips" class="nav__link">الرحلات</a></li>
+                </ul>
+            </nav>
+
+            <a href="#booking" class="btn btn--primary header__cta">احجز الآن</a>
+
+            <button class="burger" id="burger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <span class="badge">📍 طرطوس  </span>
+                <h1 class="hero__title">
+                    انطلق بحرية على <span class="text-accent">دراجة أحلامك</span>
+                </h1>
+                <p class="hero__text">
+                    تأجير دراجات هوائية وكهربائية حديثة، وبيع قطع غيار أصلية بأفضل الأسعار في طرطوس.
+                    استمتع بالبحر، الجبل، والمدينة على عجلتين.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#bikes" class="btn btn--primary">استعرض الدراجات</a>
+                    <a href="#parts" class="btn btn--ghost">قطع الغيار</a>
+                </div>
+
+                <ul class="hero__stats">
+                    <li><strong>+50</strong><span>دراجة متاحة</span></li>
+                    <li><strong>+30</strong><span>قطعة غيار</span></li>
+                    <li><strong>24/7</strong><span>خدمة عملاء</span></li>
+                </ul>
+            </div>
+
+            <div class="hero__image">
+                <img src="image/hero-bike.png" alt="دراجة TREK كهربائية حديثة" loading="eager" width="600" height="500" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Bikes Section ===== -->
+    <section class="section" id="bikes">
+        <div class="container">
+            <header class="section__head">
+                <span class="section__badge">🚲 تأجير</span>
+                <h2 class="section__title">اختر <span class="text-accent">دراجتك</span></h2>
+                <p class="section__sub">مجموعة متنوعة تناسب جميع الأذواق والمسارات</p>
+            </header>
+
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike1.png" alt="دراجة  TREK Mountain X1" loading="lazy" width="400" height="300" />
+                        <span class="card__tag">طريق</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Velocit X1</h3>
+                        <p class="card__desc">سرعة وخفة على الطرق المعبّدة والكورنيش البحري، تصميم انسيابي احترافي. </p>
+                        <div class="card__footer">
+                            <span class="price">15 <small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="Mountain X1">احجز</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike2.jpeg" alt="دراجة كهربائية TREK E-City Pro" loading="lazy" width="400" height="300" />
+                        <span class="card__tag tag--accent">كهربائية</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">E-City Pro</h3>
+                        <p class="card__desc">دراجة كهربائية مثالية للتنقل في المدينة بدون تعب، بطارية تدوم لساعات طويلة.</p>
+                        <div class="card__footer">
+                            <span class="price">25 <small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="E-City Pro">احجز</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike3.png" alt="دراجة طريق TREK Road Speed" loading="lazy" width="400" height="300" />
+                        <span class="card__tag">طريق</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Road Speed</h3>
+                        <p class="card__desc">سرعة وخفة على الطرق المعبّدة والكورنيش البحري، تصميم انسيابي احترافي.</p>
+                        <div class="card__footer">
+                            <span class="price">18<small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="Road Speed">احجز</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike4.jpeg" alt="دراجة أطفال TREK Kids Fun" loading="lazy" width="400" height="300" />
+                        <span class="card__tag">أطفال</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Kids Fun</h3>
+                        <p class="card__desc">آمنة ومريحة للأطفال مع خوذة مجانية، تصميم ملوّن يجذب الصغار.</p>
+                        <div class="card__footer">
+                            <span class="price">25<small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="Kids Fun">احجز</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike5.jpeg" alt="دراجة كهربائية جبلية TREK E-Mountain" loading="lazy" width="400" height="300" />
+                        <span class="card__tag tag--accent">رياضية</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">sport</h3>
+                        <p class="card__desc"> أداء مثالي ورائع </p>
+                        <div class="card__footer">
+                            <span class="price">30 <small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="E-Mountain">احجز</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card reveal">
+                    <div class="card__img">
+                        <img src="image/bike6.jpeg" alt="دراجة عادية TREK City Classic" loading="lazy" width="400" height="300" />
+                        <span class="card__tag">عادية</span>
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">City Classic</h3>
+                        <p class="card__desc">الرفيق اليومي للتنقل داخل مدينة طرطوس، مريحة وعملية.</p>
+                        <div class="card__footer">
+                            <span class="price">25<small>ل.س/ساعة</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="City Classic">احجز</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Parts Section ===== -->
+    <section class="section section--alt" id="parts">
+        <div class="container">
+            <header class="section__head">
+                <span class="section__badge">🔧 مستلزمات</span>
+                <h2 class="section__title">قطع <span class="text-accent">الغيار والمستلزمات</span></h2>
+                <p class="section__sub">كل ما تحتاجه لرحلة آمنة وممتعة</p>
+            </header>
+
+            <div class="grid-5">
+                <!-- Product 1 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w2.jpeg" alt="خوذة حماية للدراجة" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">خوذة حماية</h3>
+                        <p class="card__desc">خوذة عالية الجودة بحماية كاملة للرأس.</p>
+                        <div class="card__footer">
+                            <span class="price">450<small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="خوذة حماية">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w1.jpeg" alt="قبضة للدراجة" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">  قبضة للدراجة</h3>
+                        <p class="card__desc">  راحة في القيادة </p>
+                        <div class="card__footer">
+                            <span class="price">250 <small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item=" قبضة ">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w3.jpeg" alt="دواسة للدراجة" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title"> دواسة للدراجة</h3>
+                        <p class="card__desc"> راحة في القيادة </p>
+                        <div class="card__footer">
+                            <span class="price">120 <small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item=" دواسة">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w4.jpeg" alt="مطرة بلاستيك" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">مطرة بلاستيك</h3>
+                        <p class="card__desc">مطرة بلاستيكية قوية وخفيفة.</p>
+                        <div class="card__footer">
+                            <span class="price">300 <small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="مطرة بلاستيك">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 5 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w5.jpeg" alt="منفاخ دراجة محمول" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">منفاخ محمول</h3>
+                        <p class="card__desc">منفاخ عملي بحجم صغير لرفع ضغط الإطارات بسهولة.</p>
+                        <div class="card__footer">
+                            <span class="price">200 <small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="منفاخ محمول">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+                <!-- Product 6 -->
+                <article class="card card--product reveal">
+                    <div class="card__img">
+                        <img src="image/w6.jpeg" alt="شنتاية" loading="lazy" width="300" height="300" />
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title"> شنتاية</h3>
+                        <p class="card__desc">ضع اغراضك الشخصية </p>
+                        <div class="card__footer">
+                            <span class="price">600 <small>ل.س</small></span>
+                            <button class="btn btn--sm btn--primary book-btn" data-item="شنتاية ">اطلب</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Trips Section (Placeholder) ===== -->
+    <section class="section" id="trips">
+        <div class="container">
+            <div class="coming-soon reveal">
+                <div class="coming-soon__icon">🏔️</div>
+                <h2 class="coming-soon__title">الرحلات <span class="text-accent">قادمة قريباً</span></h2>
+                <p class="coming-soon__text">
+                    نعمل حالياً على تجهيز رحلات جماعية مميزة على الدراجات
+                    في أجمل مسارات طرطوس والساحل السوري.
+                </p>
+                <p class="coming-soon__sub">
+                    ⏳ ترقّبوا الإعلان الرسمي قريباً جداً...
+                </p>
+                <a href="#booking" class="btn btn--primary coming-soon__btn">احجز دراجتك الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Why TREK ===== -->
+    <section class="section section--alt" id="features">
+        <div class="container">
+            <header class="section__head">
+                <span class="section__badge">✨ مميزاتنا</span>
+                <h2 class="section__title">لماذا <span class="text-accent">TREK</span>؟</h2>
+                <p class="section__sub">تجربة تأجير مختلفة تماماً</p>
+            </header>
+
+            <div class="grid-4">
+                <div class="feature reveal">
+                    <div class="feature__icon">🛡️</div>
+                    <h3>أمان تام</h3>
+                    <p>جميع الدراجات تخضع لصيانة دورية + خوذة مجانية مع كل إيجار.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature__icon">⚡</div>
+                    <h3>أسطول حديث</h3>
+                    <p>أحدث موديلات الدراجات الهوائية والكهربائية لعام 2025.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature__icon">💰</div>
+                    <h3>أسعار منافسة</h3>
+                    <p>باقات يومية وأسبوعية بأسعار تناسب الجميع.</p>
+                </div>
+                <div class="feature reveal">
+                    <div class="feature__icon">🚚</div>
+                    <h3>توصيل مجاني</h3>
+                    <p>نوصل الدراجة إلى موقعك داخل طرطوس مجاناً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact / Booking ===== -->
+    <section class="section" id="booking">
+        <div class="container contact">
+            <div class="contact__info">
+                <span class="section__badge">📞 تواصل</span>
+                <h2 class="section__title">تواصل <span class="text-accent">معنا</span></h2>
+                <p>هل لديك سؤال أو تريد حجز دراجة أو طلب قطعة غيار؟ نحن هنا لخدمتك.</p>
+
+                <ul class="contact__list">
+                    <li><span>📞</span> <a href="tel:+963998471663" dir="ltr">+963 998 471 663</a></li>
+                    <li><span>📧</span> <a href="mailto:info@trek-tartous.com">info@trek-tartous.com</a></li>
+                    <li><span>📍</span> طرطوس</li>
+                    <li><span>🕒</span> يومياً من 8 صباحاً حتى 10 مساءً</li>
+                </ul>
+
+                <div class="socials">
+                    <a href="#" aria-label="فيسبوك">f</a>
+                    <a href="#" aria-label="إنستغرام">ig</a>
+                    <a href="#" aria-label="واتساب">wa</a>
+                </div>
+            </div>
+
+            <form class="contact__form" id="bookingForm" novalidate>
+                <h3 class="form__title">احجز أو اطلب الآن</h3>
+
+                <div class="form__group">
+                    <label for="name">الاسم الكامل</label>
+                    <input type="text" id="name" name="name" required minlength="3" autocomplete="name" />
+                </div>
+
+                <div class="form__group">
+                    <label for="phone">رقم الهاتف</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^[0-9+\s-]{8,}$" dir="ltr" autocomplete="tel" />
+                </div>
+
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="item">المنتج / الدراجة</label>
+                        <select id="item" name="item" required>
+                            <option value="">اختر...</option>
+                            <optgroup label="🚲 دراجات">
+                                <option>Mountain X1</option>
+                                <option>E-City Pro</option>
+                                <option>Road Speed</option>
+                                <option>Kids Fun</option>
+                                <option>E-Mountain</option>
+                                <option>City Classic</option>
+                            </optgroup>
+                            <optgroup label="🔧 مستلزمات">
+                                <option>خوذة حماية</option>
+                                <option>ضو أمامي LED</option>
+                                <option>زمور قوي</option>
+                                <option>قفل مقاوم</option>
+                                <option>منفاخ محمول</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="hours">عدد الساعات (للدراجات)</label>
+                        <input type="number" id="hours" name="hours" min="1" max="24" value="1" />
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label for="notes">ملاحظات (اختياري)</label>
+                    <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">إرسال الطلب</button>
+                <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <img src="image/logo.png" alt="TREK" width="80" height="80" loading="lazy" />
+            <p>© <span id="year"></span> TREK - تأجير الدراجات الهوائية والكهربائية في طرطوس. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- ===== Floating WhatsApp ===== -->
+    <a href="https://wa.me/963998471663" class="whatsapp" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
+        💬
+    </a>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
